@@ -1,8 +1,13 @@
 import './App.css';
+import Header from './Header';
+import HowItWorks from './HowItWorks';
 
 function App() {
   return (
-    <div>Hello World</div>
+    <>
+      <Header />
+      <HowItWorks />
+    </>
   );
 }
 

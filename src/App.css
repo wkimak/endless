@@ -1,3 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+.header-container, .how-it-works-container {
+  width: 100%;
+}
+
+.header-container {
+  background-image: url("./assets/photo-couch.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  max-height: 65vh;
+  padding: 300px 100px;
+  color: white;
+}
+
+.header-text-container {
+  width: 30%;
+}
