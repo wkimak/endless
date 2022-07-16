@@ -49,12 +49,23 @@ body {
   width: 30%;
 }
 
-.header-text-container button {
+button {
   background-color:#33ffd6;
   border-radius: 25px;
   padding: 8px 25px;
   border-style: none;
   font-family: "Lato-Bold";
+  cursor: pointer;
+  box-shadow: 1px 3px 6px black;
+}
+
+button:hover, button:active {
+  background-color:#2b947f;
+}
+
+button:active {
+  border: 1px solid white;
+  transform: scale(0.98);
 }
 
 .header-title {
