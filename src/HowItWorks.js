@@ -45,16 +45,18 @@ function HowItWorks() {
 
   return (
     <div className="how-it-works-container">
-      <h3>How It Works</h3>
-      {steps.map(step => {
-        return (
-          <div key={step.stepNumber} >
-            <span>{step.stepNumber}</span>
-            <p>{step.title}</p>
-            <p>{step.body}</p>
-          </div>
-        )
-      })}
+      <h1>How It Works</h1>
+      <div className="steps-container">
+        {steps.map(step => {
+          return (
+            <div className="step" key={step.stepNumber}>
+              <span className="step-number">0{step.stepNumber}</span>
+              <h3 className="step-title">{step.title}</h3>
+              <p className="step-body">{step.body}</p>
+            </div>
+          )
+        })}
+      </div>
     </div>
   );
 }
