@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './HowItWorks.css';
 
 const STEPS_URL = 'https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge';
 
@@ -46,17 +47,20 @@ function HowItWorks() {
   return (
     <div className="how-it-works-container">
       <h1>How It Works</h1>
-      <div className="steps-container">
+      <ul className="steps-container">
         {steps.map(step => {
           return (
-            <div className="step" key={step.stepNumber}>
-              <span className="step-number">0{step.stepNumber}</span>
-              <h3 className="step-title">{step.title}</h3>
-              <p className="step-body">{step.body}</p>
-            </div>
+            <li 
+              className="step"
+              data-testid="step"
+              key={step.stepNumber}>
+                <span className="step-number">0{step.stepNumber}</span>
+                <h3 className="step-title">{step.title}</h3>
+                <p className="step-body">{step.body}</p>
+            </li>
           )
         })}
-      </div>
+      </ul>
     </div>
   );
 }

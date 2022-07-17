@@ -1,0 +1,35 @@
+.how-it-works-container {
+  text-align: center;
+  width: 100%;
+}
+
+.how-it-works-container h1 {
+  font-family: "Lato-Light";
+  font-weight: 200;
+}
+
+.steps-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.step {
+  max-width: 225px;
+}
+
+.step-number {
+  font-family: 'Lato-Bold';
+  padding: 10px;
+  border-bottom: 3px solid #33ffd6;
+}
+
+.step-title {
+  font-family: 'Lato-Regular';
+} 
+
+.step-body {
+  font-family: 'Lato-Light';
+}
