@@ -27,6 +27,15 @@
   box-sizing: border-box;
 }
 
+html, body, #root, .app-container {
+  height: 100%;
+}
+
 body {
   margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
 }

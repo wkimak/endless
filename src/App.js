@@ -4,10 +4,10 @@ import HowItWorks from './components/HowItWorks';
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Header />
       <HowItWorks />
-    </>
+    </div>
   );
 }
 

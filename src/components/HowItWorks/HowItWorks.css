@@ -1,6 +1,6 @@
 .how-it-works-container {
   text-align: center;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .how-it-works-container h1 {
@@ -8,16 +8,17 @@
   font-weight: 200;
 }
 
-.steps-container {
+.steps-list {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+  padding: 0;
 }
 
 .step {
-  max-width: 225px;
+  max-width: 235px;
 }
 
 .step-number {

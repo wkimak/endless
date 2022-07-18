@@ -47,7 +47,7 @@ function HowItWorks() {
   return (
     <div className="how-it-works-container">
       <h1>How It Works</h1>
-      <ul className="steps-container">
+      <ol className="steps-list">
         {steps.map(step => {
           return (
             <li 
@@ -60,7 +60,7 @@ function HowItWorks() {
             </li>
           )
         })}
-      </ul>
+      </ol>
     </div>
   );
 }
