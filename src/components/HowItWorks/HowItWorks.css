@@ -1,18 +1,77 @@
+@media screen and (max-width: 480px) {
+  .how-it-works-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .step-number {
+    font-size: 3.4rem;
+  }
+
+  .step-title {
+    font-size: 1.6rem;
+  }
+
+  .step-body {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .how-it-works-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 3.6rem;
+  }
+
+  .step-title {
+    font-size: 1.8rem;
+  }
+
+  .step-body {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .how-it-works-container h1 {
+    font-size: 2.6rem;
+  }
+
+  .step-number {
+    font-size: 3.8rem;
+  }
+
+  .step-title {
+    font-size: 2.0rem;
+  }
+
+  .step-body {
+    font-size: 1.8rem;
+  }
+}
+
+.how-it-works-container, .steps-list {
+  display: flex;
+  justify-content: center;
+}
+
 .how-it-works-container {
-  text-align: center;
   flex-grow: 1;
+  text-align: center;
+  flex-direction: column;
 }
 
 .how-it-works-container h1 {
   font-family: "Lato-Light";
   font-weight: 200;
+  margin: 15px 0 5px 0;
 }
 
 .steps-list {
-  display: flex;
   gap: 40px;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
   padding: 0;
 }
@@ -24,6 +83,7 @@
 .step-number {
   font-family: 'Lato-Bold';
   padding: 10px;
+  display: inline-block;
   border-bottom: 3px solid #33ffd6;
 }
 

@@ -1,7 +1,19 @@
 @media screen and (max-width: 480px) {
  .header-container {
     min-height: 245px;
-    padding: 20px 25px;
+ }
+
+ .header-text-container {
+    width: 82%;
+    top: 5%;
+ }
+
+ .header-title {
+    font-size: 1.4rem;
+ }
+
+ .header-statement {
+    font-size: 2.4rem;
  }
 
  .header-body {
@@ -11,13 +23,29 @@
  button {
     margin-top: 35px;
     padding: 15px 40px;
-    float: right;
+    right: 10px;
  }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
+  .header-container {
+    min-height: 460px;
+  }
+
   .header-text-container {
     width: 364px;
+  }
+
+  .header-title {
+    font-size: 1.6rem;
+  }
+
+  .header-statement {
+    font-size: 3.2rem;
+  }
+
+  .header-body {
+    font-size: 1.4rem;
   }
 
   button {
@@ -26,28 +54,44 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .header-container {
-    min-height: 460px;
-    padding-top: 164px;
-    padding-left: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-container {
-    min-height: 600px;
-    padding-left: 60px;
-    padding-top: 220px;
     background-position: left center;
+  }
+
+  .header-text-container {
+    width: 400px;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-statement {
+    font-size: 3.4rem;
+  }
+
+  .header-body {
+    font-size: 1.6rem;
   }
 }
 
 .header-container {
+  flex-grow: 3.5;
   background-image: url("../../assets/photo-couch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
+}
+
+.header-text-container, button {
+  position: absolute;
+}
+
+.header-text-container {
+  left: 10%;
+  bottom: 25%;
 }
 
 button {
@@ -81,4 +125,8 @@ button:active {
 
 .header-statement p:last-child {
   margin-top: 2px;
+}
+
+.header-statement p {
+  margin: 5px 0;
 }

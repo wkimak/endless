@@ -54,7 +54,7 @@ function HowItWorks() {
               className="step"
               data-testid="step"
               key={step.stepNumber}>
-                <span className="step-number">0{step.stepNumber}</span>
+                <div className="step-number">0{step.stepNumber}</div>
                 <h3 className="step-title">{step.title}</h3>
                 <p className="step-body">{step.body}</p>
             </li>
