@@ -77,7 +77,7 @@
 }
 
 .header-container {
-  flex-grow: 3.5;
+  flex-grow: 3;
   background-image: url("../../assets/photo-couch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,6 +100,7 @@ button {
   border-style: none;
   font-family: "Lato-Bold";
   cursor: pointer;
+  letter-spacing: 0.1em;
 }
 
 button:hover, button:active {
@@ -111,12 +112,13 @@ button:active {
   transform: scale(0.98);
 }
 
-.header-title, .header-body {
-  font-family: "Lato-Regular";
+.header-title, .header-statement {
+  font-family: "Lato-Light";
 }
 
-.header-statement {
-  font-family: "Lato-Light";
+.header-body {
+  font-family: "Lato-Regular";
+  margin-top: 18px;
 }
 
 .header-statement p:first-child {
