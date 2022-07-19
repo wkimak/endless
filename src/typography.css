@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Lato-Black";
-  src: url("./fonts/Lato-Black.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Lato-Bold";
   src: url("./fonts/Lato-Bold.ttf") format("truetype");
 }
@@ -18,17 +13,12 @@
   src: url("./fonts/Lato-Light.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Lato-Thin";
-  src: url("./fonts/Lato-Thin.ttf") format("truetype");
-}
-
 @media screen and (max-width: 480px) {
-  .header-title {
+  .banner-title {
     font-size: 1.4rem;
   }
 
-  .header-statement {
+  .banner-statement {
     font-size: 2.4rem;
   }
 
@@ -48,8 +38,8 @@
     font-size: 1.4rem;
   }
 
-  .caption {
-    font-size: 1.8rem;
+  .modal-caption {
+    font-size: 2.0rem;
   }
 
   .profile-form label {
@@ -58,15 +48,15 @@
 }
 
 @media screen and (min-width: 481px) {
-  .header-title {
+  .banner-title {
     font-size: 1.6rem;
   }
 
-  .header-statement {
+  .banner-statement {
     font-size: 3.2rem;
   }
 
-  .header-body {
+  .banner-body {
     font-size: 1.4rem;
   }
 
@@ -86,8 +76,8 @@
     font-size: 1.6rem;
   }
 
-  .caption {
-    font-size: 2.0rem;
+  .modal-caption {
+    font-size: 2.2rem;
   }
 
   .profile-form label {
@@ -96,15 +86,15 @@
 }
 
 @media screen and (min-width: 769px) {
-  .header-title {
+  .banner-title {
     font-size: 1.8rem;
   }
 
-  .header-statement {
+  .banner-statement {
     font-size: 3.4rem;
   }
 
-  .header-body {
+  .banner-body {
     font-size: 1.6rem;
   }
 
@@ -124,8 +114,8 @@
     font-size: 1.8rem;
   }
 
-  .caption {
-    font-size: 2.2rem;
+  .modal-caption {
+    font-size: 2.4rem;
   }
 
   .profile-form label {
@@ -133,17 +123,17 @@
   }
 }
 
-.header-title,
-.header-statement,
+.banner-title,
+.banner-statement,
 .step-body,
 .profile-form label {
   font-family: "Lato-Light";
 }
 
-.header-body, 
+.banner-body, 
 .how-it-works-container h1, 
 .step-title,
-.caption {
+.modal-caption {
   font-family: "Lato-Regular";
 }
 

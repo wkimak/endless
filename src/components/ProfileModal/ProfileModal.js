@@ -81,10 +81,10 @@ function ProfileForm({ savedPreferences, toggleModal, handleSavePreferences }) {
         onClick={() => toggleModal(false)}
         src={xMark} 
         alt="exit modal"/>
-        <div className="caption">Select your game preferences so we only get you games that you love!</div>
+        <div className="modal-caption">Select your game preferences so we only get you games that you love!</div>
         <form className="profile-form" onSubmit={handleSubmit}>
           <label>
-            Genres
+            Genre
             <Select
               options={genreOptions}
               name="genres"
@@ -94,7 +94,7 @@ function ProfileForm({ savedPreferences, toggleModal, handleSavePreferences }) {
               className="select" />
           </label>
           <label>
-            ESRB ratings
+            ESRB rating
             <Select
               options={ratingOptions}
               name="ratings"

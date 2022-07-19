@@ -24,6 +24,7 @@ body {
   border-radius: 25px;
   border-style: none;
   cursor: pointer;
+  padding: 8px 25px;
 }
 
 .btn:hover, .btn:active {

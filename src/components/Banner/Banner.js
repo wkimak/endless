@@ -3,14 +3,14 @@ import React from 'react';
 
 function Banner({ hasSavedPreferences, toggleModal }) {
   return (
-    <div className="header-container">
-      <div className="header-text-container">
-        <h3 className="header-title">New Games & Accessories</h3>
-        <div className="header-statement">
+    <div className="banner-container">
+      <div className="banner-text-container">
+        <h3 className="banner-title">New Games & Accessories</h3>
+        <div className="banner-statement">
           <p>Monthly packages.</p>
           <p>Excitement delivered daily.</p>
         </div>
-        <p className="header-body">
+        <p className="banner-body">
           What's the best way to shop for the video games and peripherals?
           How about never shopping at all?
           You'll get new stuff on your doorstep - every month.

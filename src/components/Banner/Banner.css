@@ -1,51 +1,47 @@
 @media screen and (max-width: 480px) {
- .header-container {
+ .banner-container {
     min-height: 245px;
  }
 
- .header-text-container {
+ .banner-text-container {
     width: 82%;
     top: 5%;
  }
 
- .header-body {
+ .banner-body {
     display: none;
  }
 
- button {
+ .btn.get-started {
     margin-top: 35px;
-    padding: 15px 40px;
+    padding: 15px 30px;
     right: 10px;
  }
 }
 
 @media screen and (min-width: 481px) {
-  .header-container {
-    min-height: 460px;
+  .banner-container {
+    min-height: 410px;
   }
 
-  .header-text-container {
+  .banner-text-container {
     width: 364px;
   }
 
-  button {
+  .btn.get-started {
     margin-top: 10px;
-    padding: 8px 25px;
   }
 }
 
 @media screen and (min-width: 769px) {
-  .header-container {
-    background-position: left center;
-  }
-
-  .header-text-container {
+  .banner-text-container {
     width: 400px;
   }
 }
 
-.header-container {
+.banner-container {
   flex-grow: 3;
+  position: relative;
   background-image: -webkit-image-set(
     "../../assets/photo-couch.jpg" 1x, 
     "../../assets/photo-couch_2x.jpg" 2x
@@ -56,32 +52,32 @@
   );
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
   color: white;
-  position: relative;
 }
 
-.header-text-container, .btn.get-started {
+.banner-text-container, .btn.get-started {
   position: absolute;
 }
 
-.header-text-container {
+.banner-text-container {
   left: 10%;
   bottom: 25%;
 }
 
-.header-body {
+.banner-body {
   margin-top: 18px;
 }
 
-.header-statement p:first-child {
+.banner-statement p:first-child {
   margin-bottom: 2px;
 }
 
-.header-statement p:last-child {
+.banner-statement p:last-child {
   margin-top: 2px;
 }
 
-.header-statement p {
+.banner-statement p {
   margin: 5px 0;
 }
 
