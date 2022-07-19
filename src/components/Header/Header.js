@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function Header({ handleOpenModal, hasSavedPreferences }) {
+function Header({ hasSavedPreferences, toggleModal }) {
   return (
     <div className="header-container">
       <div className="header-text-container">
@@ -15,8 +15,8 @@ function Header({ handleOpenModal, hasSavedPreferences }) {
           How about never shopping at all?
           You'll get new stuff on your doorstep - every month.
         </p>
-        <button className="btn get-started" onClick={handleOpenModal}>
-          { !hasSavedPreferences ? 'GET STARTED' : 'EDIT PREFERENCES' }
+        <button className="btn get-started" onClick={() => toggleModal(true)}>
+          {!hasSavedPreferences ? 'GET STARTED' : 'EDIT PREFERENCES'}
         </button>
       </div>
     </div>

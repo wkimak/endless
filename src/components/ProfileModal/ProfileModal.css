@@ -12,7 +12,11 @@
   }
 
   .select, .caption {
-    width: 300px;
+    width: 250px;
+  }
+
+  .exit-icon {
+    width: 15px;
   }
 }
 
@@ -30,7 +34,11 @@
   }
 
   .select, .caption {
-    width: 400px;
+    width: 350px;
+  }
+
+  .exit-icon {
+    width: 20px;
   }
 }
 
@@ -48,7 +56,11 @@
   }
 
   .select, .caption {
-    width: 500px;
+    width: 450px;
+  }
+
+  .exit-icon {
+    width: 25px;
   }
 }
 
@@ -74,11 +86,13 @@
 }
 
 .profile-form {
-  height: 80%;
-  padding: 40px;
+  max-height: 100vh;
+  position: relative;
   flex-direction: column;
+  padding: 40px 0;
   gap: 40px;
   background-color: white;
+  border-radius: 5px;
   overflow: scroll;
 }
 
@@ -92,4 +106,12 @@
 
 .btn.submit:active {
   border: 1px solid black;
+}
+
+.exit-icon {
+  height: auto;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select'
+import xMark from '../../assets/xmark.svg';
 import './ProfileModal.css';
 
 const genreOptions = [
@@ -47,8 +48,16 @@ const platformOptions = [
   { value: 'pc', label: 'PC' },
 ];
 
-function ProfileForm({ handleSavePreferences, savedPreferences }) {
-  const [state, setState] = useState(savedPreferences);
+function ProfileForm({ savedPreferences, toggleModal, handleSavePreferences }) {
+  const [state, setState] = useState(
+    savedPreferences ||
+    {
+      genres: [],
+      ratings: [],
+      releaseYears: [],
+      scores: [],
+      platforms: []
+    });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -67,6 +76,11 @@ function ProfileForm({ handleSavePreferences, savedPreferences }) {
   return (
     <div className="modal-overlay">
       <form className="profile-form" onSubmit={handleSubmit}>
+        <img 
+          className="exit-icon" 
+          onClick={() => toggleModal(false)}
+          src={xMark} 
+          alt="exit modal"/>
         <div className="caption">Select game preferences so we only get you games that you love!</div>
         <label>
           Genres

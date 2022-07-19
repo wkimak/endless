@@ -1,42 +1,36 @@
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import HowItWorks from './components/HowItWorks';
 import ProfileModal from './components/ProfileModal';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [savedPreferences, setSavedPreferences] = useState({
-    genres: [],
-    ratings: [],
-    releaseYears: [],
-    scores: [],
-    platforms: []
-  });
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
+  const [savedPreferences, setSavedPreferences] = useState(null);
 
-  const handleOpenModal = useCallback(() => {
-    setIsModalOpen(true);
-  });
+  const toggleModal = (isOpen) => {
+    setIsProfileModalOpen(isOpen);
+  };
 
   const handleSavePreferences = (values) => {
-    setIsModalOpen(false);
-    setSavedPreferences(values);
-  }
+    toggleModal(false);
+
+    const hasSavedPreferences = Object.values(values).some(field => field.length);
+    setSavedPreferences(hasSavedPreferences ? values : null);
+  };
 
   return (
     <div className="app-container">
       <Header
-        hasSavedPreferences={
-          Object.values(savedPreferences)
-            .filter(field => field.length).length > 0
-        }
-        handleOpenModal={handleOpenModal} />
+        hasSavedPreferences={savedPreferences !== null}
+        toggleModal={toggleModal} />
       <HowItWorks />
       {
-        isModalOpen &&
+        isProfileModalOpen &&
         <ProfileModal
-          handleSavePreferences={handleSavePreferences}
-          savedPreferences={savedPreferences} />
+          savedPreferences={savedPreferences}
+          toggleModal={toggleModal} 
+          handleSavePreferences={handleSavePreferences} />
       }
     </div>
   );
