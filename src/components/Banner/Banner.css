@@ -8,14 +8,6 @@
     top: 5%;
  }
 
- .header-title {
-    font-size: 1.4rem;
- }
-
- .header-statement {
-    font-size: 2.4rem;
- }
-
  .header-body {
     display: none;
  }
@@ -36,18 +28,6 @@
     width: 364px;
   }
 
-  .header-title {
-    font-size: 1.6rem;
-  }
-
-  .header-statement {
-    font-size: 3.2rem;
-  }
-
-  .header-body {
-    font-size: 1.4rem;
-  }
-
   button {
     margin-top: 10px;
     padding: 8px 25px;
@@ -61,18 +41,6 @@
 
   .header-text-container {
     width: 400px;
-  }
-
-  .header-title {
-    font-size: 1.8rem;
-  }
-
-  .header-statement {
-    font-size: 3.4rem;
-  }
-
-  .header-body {
-    font-size: 1.6rem;
   }
 }
 
@@ -101,12 +69,7 @@
   bottom: 25%;
 }
 
-.header-title, .header-statement {
-  font-family: "Lato-Light";
-}
-
 .header-body {
-  font-family: "Lato-Regular";
   margin-top: 18px;
 }
 

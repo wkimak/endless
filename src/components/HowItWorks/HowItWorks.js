@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './HowItWorks.css';
+import React, { useState, useEffect } from 'react';
 
 const STEPS_URL = 'https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge';
 

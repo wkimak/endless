@@ -1,7 +1,7 @@
+import './ProfileModal.css';
 import React, { useState } from 'react';
 import Select from 'react-select'
 import xMark from '../../assets/xmark.svg';
-import './ProfileModal.css';
 
 const genreOptions = [
   { value: 'actionAdventure', label: 'Action-adventure' },
@@ -75,65 +75,67 @@ function ProfileForm({ savedPreferences, toggleModal, handleSavePreferences }) {
 
   return (
     <div className="modal-overlay">
-      <form className="profile-form" onSubmit={handleSubmit}>
+      <div className="modal-container">
         <img 
-          className="exit-icon" 
-          onClick={() => toggleModal(false)}
-          src={xMark} 
-          alt="exit modal"/>
-        <div className="caption">Select game preferences so we only get you games that you love!</div>
-        <label>
-          Genres
-          <Select
-            options={genreOptions}
-            name="genres"
-            isMulti={true}
-            value={state.genres}
-            onChange={handleChange}
-            className="select" />
-        </label>
-        <label>
-          ESRB ratings
-          <Select
-            options={ratingOptions}
-            name="ratings"
-            isMulti={true}
-            value={state.ratings}
-            onChange={handleChange}
-            className="select" />
-        </label>
-        <label>
-          Release year
-          <Select
-            options={releaseYearOptions}
-            name="releaseYears"
-            isMulti={true}
-            value={state.releaseYears}
-            onChange={handleChange}
-            className="select" />
-        </label>
-        <label>
-          Metacritic score
-          <Select
-            options={scoreOptions}
-            name="scores"
-            isMulti={true}
-            value={state.scores}
-            onChange={handleChange}
-            className="select" />
-        </label>
-        <label>
-          Platform
-          <Select
-            options={platformOptions}
-            name="platforms"
-            isMulti={true}
-            value={state.platforms}
-            onChange={handleChange}
-            className="select" />
-        </label>
-        <button className="btn submit">Submit Preferences</button>
-      </form>
+        className="exit-icon" 
+        onClick={() => toggleModal(false)}
+        src={xMark} 
+        alt="exit modal"/>
+        <div className="caption">Select your game preferences so we only get you games that you love!</div>
+        <form className="profile-form" onSubmit={handleSubmit}>
+          <label>
+            Genres
+            <Select
+              options={genreOptions}
+              name="genres"
+              isMulti={true}
+              value={state.genres}
+              onChange={handleChange}
+              className="select" />
+          </label>
+          <label>
+            ESRB ratings
+            <Select
+              options={ratingOptions}
+              name="ratings"
+              isMulti={true}
+              value={state.ratings}
+              onChange={handleChange}
+              className="select" />
+          </label>
+          <label>
+            Release year
+            <Select
+              options={releaseYearOptions}
+              name="releaseYears"
+              isMulti={true}
+              value={state.releaseYears}
+              onChange={handleChange}
+              className="select" />
+          </label>
+          <label>
+            Metacritic score
+            <Select
+              options={scoreOptions}
+              name="scores"
+              isMulti={true}
+              value={state.scores}
+              onChange={handleChange}
+              className="select" />
+          </label>
+          <label>
+            Platform
+            <Select
+              options={platformOptions}
+              name="platforms"
+              isMulti={true}
+              value={state.platforms}
+              onChange={handleChange}
+              className="select" />
+          </label>
+          <button className="btn submit">Submit Preferences</button>
+        </form>
+      </div>
     </div>
   );
 }

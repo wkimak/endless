@@ -1,7 +1,7 @@
+import './Banner.css';
 import React from 'react';
-import './Header.css';
 
-function Header({ hasSavedPreferences, toggleModal }) {
+function Banner({ hasSavedPreferences, toggleModal }) {
   return (
     <div className="header-container">
       <div className="header-text-container">
@@ -23,4 +23,4 @@ function Header({ hasSavedPreferences, toggleModal }) {
   )
 }
 
-export default Header;
+export default Banner;

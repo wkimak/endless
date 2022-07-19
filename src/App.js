@@ -1,6 +1,8 @@
-import { useState } from 'react';
 import './App.css';
-import Header from './components/Header';
+import './typography.css';
+import { useState } from 'react';
+import NavBar from './components/NavBar';
+import Banner from './components/Banner';
 import HowItWorks from './components/HowItWorks';
 import ProfileModal from './components/ProfileModal';
 
@@ -21,7 +23,8 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header
+      <NavBar />
+      <Banner
         hasSavedPreferences={savedPreferences !== null}
         toggleModal={toggleModal} />
       <HowItWorks />

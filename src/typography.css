@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Lato-Black";
+  src: url("./fonts/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("./fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./fonts/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Thin";
+  src: url("./fonts/Lato-Thin.ttf") format("truetype");
+}
+
+@media screen and (max-width: 480px) {
+  .header-title {
+    font-size: 1.4rem;
+  }
+
+  .header-statement {
+    font-size: 2.4rem;
+  }
+
+  .how-it-works-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .step-number {
+    font-size: 3.4rem;
+  }
+
+  .step-title {
+    font-size: 1.6rem;
+  }
+
+  .step-body {
+    font-size: 1.4rem;
+  }
+
+  .caption {
+    font-size: 1.8rem;
+  }
+
+  .profile-form label {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .header-title {
+    font-size: 1.6rem;
+  }
+
+  .header-statement {
+    font-size: 3.2rem;
+  }
+
+  .header-body {
+    font-size: 1.4rem;
+  }
+
+  .how-it-works-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 3.6rem;
+  }
+
+  .step-title {
+    font-size: 1.8rem;
+  }
+
+  .step-body {
+    font-size: 1.6rem;
+  }
+
+  .caption {
+    font-size: 2.0rem;
+  }
+
+  .profile-form label {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-statement {
+    font-size: 3.4rem;
+  }
+
+  .header-body {
+    font-size: 1.6rem;
+  }
+
+  .how-it-works-container h1 {
+    font-size: 2.6rem;
+  }
+
+  .step-number {
+    font-size: 3.8rem;
+  }
+
+  .step-title {
+    font-size: 2.0rem;
+  }
+
+  .step-body {
+    font-size: 1.8rem;
+  }
+
+  .caption {
+    font-size: 2.2rem;
+  }
+
+  .profile-form label {
+    font-size: 2.0rem;
+  }
+}
+
+.header-title,
+.header-statement,
+.step-body,
+.profile-form label {
+  font-family: "Lato-Light";
+}
+
+.header-body, 
+.how-it-works-container h1, 
+.step-title,
+.caption {
+  font-family: "Lato-Regular";
+}
+
+.step-number, .btn {
+  font-family: 'Lato-Bold';
+}
+
+.how-it-works-container h1 {
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+}
+
+.btn.submit {
+  font-size: 1.8rem;
+}
