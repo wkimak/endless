@@ -92,31 +92,13 @@
   position: relative;
 }
 
-.header-text-container, button {
+.header-text-container, .btn.get-started {
   position: absolute;
 }
 
 .header-text-container {
   left: 10%;
   bottom: 25%;
-}
-
-button {
-  background-color:#33ffd6;
-  border-radius: 25px;
-  border-style: none;
-  font-family: "Lato-Bold";
-  cursor: pointer;
-  letter-spacing: 0.1em;
-}
-
-button:hover, button:active {
-  background-color:#2b947f;
-}
-
-button:active {
-  border: 1px solid white;
-  transform: scale(0.98);
 }
 
 .header-title, .header-statement {
@@ -138,4 +120,8 @@ button:active {
 
 .header-statement p {
   margin: 5px 0;
+}
+
+.btn.get-started:active {
+  border: 1px solid white;
 }

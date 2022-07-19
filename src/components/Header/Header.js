@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+function Header({ handleOpenModal, hasSavedPreferences }) {
   return (
     <div className="header-container">
       <div className="header-text-container">
@@ -11,11 +11,13 @@ function Header() {
           <p>Excitement delivered daily.</p>
         </div>
         <p className="header-body">
-          What's the best way to shop for the video games and peripherals? 
-          How about never shopping at all? 
+          What's the best way to shop for the video games and peripherals?
+          How about never shopping at all?
           You'll get new stuff on your doorstep - every month.
         </p>
-        <button>GET STARTED</button>
+        <button className="btn get-started" onClick={handleOpenModal}>
+          { !hasSavedPreferences ? 'GET STARTED' : 'EDIT PREFERENCES' }
+        </button>
       </div>
     </div>
   )
