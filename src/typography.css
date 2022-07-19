@@ -13,6 +13,15 @@
   src: url("./fonts/Lato-Light.ttf") format("truetype");
 }
 
+html {
+  /* 
+    Set root font-size to be 10px (based on browser default size of 16px)
+    This makes it simpler to work with rem units:
+    (i.e. 1.6 rem is equal to 16px, 2.4rem is equal to 24px)
+  */
+  font-size: 62.5%;
+}
+
 @media screen and (max-width: 480px) {
   .banner-title {
     font-size: 1.4rem;
